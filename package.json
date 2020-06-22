@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "start:dev": "tsnd -r tsconfig-paths/register --respawn --transpileOnly --ignore-watch node_modules --no-notify src/index.ts",
-    "start:prod": "run-s clean compile run",
-    "start:test": "jest",
+    "dev": "tsnd -r tsconfig-paths/register --respawn --transpileOnly --ignore-watch node_modules --no-notify src/index.ts",
+    "prod": "run-s clean compile run",
+    "test": "jest",
     "clean": "rimraf dist",
     "compile": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "run": "node dist"
