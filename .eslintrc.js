@@ -50,14 +50,7 @@ module.exports = {
       'warn',
       {
         newlinesBetween: 'always',
-        groups: [
-          'module',
-          '/^@notore/',
-          '/./types$/',
-          '/^./structures/',
-          '/./types+/',
-          ['parent', 'sibling', 'index'],
-        ],
+        groups: ['module', ['parent', 'sibling', 'index']],
         alphabetize: { order: 'asc', ignoreCase: true },
       },
     ],
