@@ -9,13 +9,17 @@
     "test": "jest",
     "clean": "rimraf dist",
     "compile": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "run": "node dist"
+    "run": "node dist",
+    "lint": "eslint ./ --ext js,ts",
+    "lint:fix": "eslint ./ --ext js,ts --fix",
+    "prettier": "prettier --check ./**/*.{js,ts}",
+    "prettier:fix": "prettier --write ./**/*.{js,ts}"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zevdvlpr/nodejs-template.git"
   },
-  "keywords": [    
+  "keywords": [
     "nodejs",
     "typescript",
     "express",
@@ -34,7 +38,8 @@
   },
   "homepage": "https://github.com/zevdvlpr/nodejs-template#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "prettier": "^2.0.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
