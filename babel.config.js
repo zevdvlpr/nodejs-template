@@ -4,21 +4,23 @@ module.exports = {
       '@babel/preset-env',
       {
         targets: {
-          node: 'current'
-        }
-      }
+          node: 'current',
+        },
+      },
     ],
-    '@babel/preset-typescript'
+    '@babel/preset-typescript',
   ],
   plugins: [
-    ['module-resolver', {
-      alias: {
-        '@controllers': './src/controllers',
-        '@models': './src/models'
-      }
-    }]
+    [
+      'module-resolver',
+      {
+        alias: {
+          '@controllers': './src/controllers',
+          '@models': './src/models',
+          '@types': './src/types',
+        },
+      },
+    ],
   ],
-  ignore: [
-    '**/*.spec.ts'
-  ]
-}
+  ignore: ['**/*.spec.ts'],
+};
