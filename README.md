@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://discord.com/assets/e4923594e694a21542a489471ecffa50.svg" alt="logo" height="70"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="logo" height="150"/>
   <h1>Node.js Template</h1>
   <p>Template para projetos usando Typescript</p>
   <p>
@@ -56,7 +56,6 @@ Minhas Configurações que uso nos meus projetos de back-end usando Node.js
 - [ts-node-dev](https://github.com/whitecolor/ts-node-dev)
 - [tsconfig-paths](https://github.com/dividab/tsconfig-paths)
 - [typescript](https://github.com/microsoft/TypeScript)
-
 
 ## :gear: Requisitos
 
