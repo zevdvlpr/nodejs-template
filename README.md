@@ -15,7 +15,7 @@
 
 ## :page_with_curl: Sobre
 
-Minhas Configurações que uso nos meus projetos de back-end usando Node.js
+Minhas Configurações que uso nos meus projetos back-end usando Node.js
 
 ## :computer: Tecnologias
 

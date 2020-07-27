@@ -1,6 +1,6 @@
 {
   "name": "nodejs-template",
-  "description": "Minhas Configurações que uso nos meus projetos de back-end usando Node.js",
+  "description": "Minhas Configurações que uso nos meus projetos back-end usando Node.js",
   "version": "1.0.0",
   "main": "src/app.ts",
   "scripts": {
