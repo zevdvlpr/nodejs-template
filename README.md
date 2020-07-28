@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="logo" height="150"/>
   <h1>Node.js Template</h1>
-  <p>Template para projetos usando Typescript</p>
+  <p>Template para projetos Back-end usando Typescript</p>
   <p>
     <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#computer-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -65,9 +65,9 @@ Minhas Configurações que uso nos meus projetos back-end usando Node.js
 
 ### Extensões no Visual Studio Code
 
-- [Editor Config]()
-- [Eslint]()
-- [Prettier]()
+- [Editor Config](https://github.com/editorconfig/editorconfig-vscode)
+- [Eslint](https://github.com/Microsoft/vscode-eslint)
+- [Prettier](https://github.com/prettier/prettier-vscode)
 
 ## :arrow_forward: Como utilizar
 
