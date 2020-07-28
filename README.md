@@ -65,9 +65,9 @@ Minhas Configurações que uso nos meus projetos back-end usando Node.js
 
 ### Extensões no Visual Studio Code
 
-- [Editor Config]()
-- [Eslint]()
-- [Prettier]()
+- [Editor Config](https://github.com/editorconfig/editorconfig-vscode)
+- [Eslint](https://github.com/Microsoft/vscode-eslint)
+- [Prettier](https://github.com/prettier/prettier-vscode)
 
 ## :arrow_forward: Como utilizar
 
