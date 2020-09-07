@@ -1,12 +1,9 @@
+# node modules paste
+node_modules/
+
+# build paste
 dist/
-.editorconfig
-.eslintignore
-.eslintrc.js
-.gitignore
-babel.config.js
-jest.config.js
-package.json
-prettier.config.js
-README.md
-tsconfig.json
+
+# yarn files
 yarn.lock
+yarn-error.log*

@@ -1,3 +1,11 @@
-import app from './server';
+import express from 'express';
 
-app.listen(3333, () => console.log('Server has startup'));
+import routes from './routes';
+
+const app = express().disable('x-powered-by');
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(routes);
+
+export default app;

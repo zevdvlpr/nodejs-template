@@ -1,14 +1,15 @@
 {
   "env": {
-    "browser": true,
+    "es6": true,
+    "node": true,
     "jest": true,
-    "es6": true
+    "commonjs": true
   },
   "extends": [
     "airbnb-base",
-    "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -16,49 +17,40 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "import", "import-helpers", "prettier"],
+  "plugins": ["import", "prettier", "import-helpers", "@typescript-eslint"],
   "rules": {
-    "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/no-unused-vars": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
     "prettier/prettier": "error",
-    "consistent-return": "off",
     "class-methods-use-this": "off",
+    
     "no-console": "off",
-    "no-param-reassign": "off",
-    "no-underscore-dangle": "off",
-    "no-unused-expressions": "off",
-    "import/no-dynamic-require": "off",
-    "import/no-named-as-default": "off",
+    
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",    
+
     "import/prefer-default-export": "off",
+    "import/extensions": ["error", "ignorePackages", { "ts": "never" }],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never"
-      }
-    ],
     "import-helpers/order-imports": [
       "warn",
       {
         "newlinesBetween": "always",
-        "groups": ["module", ["parent", "sibling", "index"]],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
+        "alphabetize": { "order": "asc", "ignoreCase": true },
+        "groups": [
+          "module",
+          "/^@controllers/",
+          "/^@models/",
+          ["parent", "sibling", "index"]
+        ]
       }
     ]
   },
   "settings": {
-    "import/extensions": [".ts", ".js"],
+    "import/extensions": [".js", ".ts"],
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".js"]
+      "@typescript-eslint/parser": [".js", ".ts"]
     },
     "import/resolver": {
       "typescript": {

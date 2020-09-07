@@ -1,10 +1,3 @@
-import express from 'express';
+import app from './app';
 
-import routes from './routes';
-
-const server = express();
-
-server.use(express.json());
-server.use(routes);
-
-export default server;
+app.listen(3333, () => console.log('Server has startup'));
