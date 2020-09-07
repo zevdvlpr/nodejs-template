@@ -42,6 +42,7 @@
           "module",
           "/^@controllers/",
           "/^@models/",
+          "/^@types/",
           ["parent", "sibling", "index"]
         ]
       }

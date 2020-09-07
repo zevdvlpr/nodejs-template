@@ -16,7 +16,8 @@
       {
         "alias": {
           "@controllers": "./src/controllers",
-          "@models": "./src/models"
+          "@models": "./src/models",
+          "@types": "./src/types"
         }
       }
     ]
